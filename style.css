@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: #f9fafb;
+    color: #333;
+}
+/*************************************************/
+.header div {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(46, 46, 215);
+    color: rgb(233, 143, 24);
+}
+.header h1 {
+    font-size: 30px;
+}
+/*************************************************/
+.introduction {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
