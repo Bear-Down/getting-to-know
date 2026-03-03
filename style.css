@@ -54,6 +54,21 @@ body {
     color: black;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.member-card:hover {
+    transform: scale(1.09);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.members-grid:hover .member-card {
+    transform: scale(0.95);
+}
+
+.members-grid .member-card:hover {
+    transform: scale(1.08);
 }
 
 .member-image {
