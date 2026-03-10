@@ -8,3 +8,10 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);
+
+function showMember(memberId) {
+    const selected = document.getElementById(memberId);
+    selected.style.display = "block";
+
+    selected.scrollIntoView({ behavior: "smooth" });
+}
