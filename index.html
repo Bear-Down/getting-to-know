@@ -12,13 +12,9 @@
     <header class="header">
         <div>
             <h1>Bear Down</h1>
-            <!-- <nav>
-
-            </nav> -->
         </div>
     </header>
-    <!-- clock script has to be called after the header is loaded -->
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 
     <!-- Introduction Section -->
     <section class="introduction">
@@ -31,43 +27,76 @@
     </section>
 
     <!-- Group Image -->
-    <section class="group-image">
-        <img src="">
+    <section class="group-section">
+        <p>Click on us!</p>
+        <div class="group-section-container">
+            <img src="assets/group-picture.jpg" class="group-image" usemap="#teammap">
+    
+            <map name="teammap">
+                <area shape="rect" coords="50,100,200,350" href="#members" onclick="showMember('edward')">
+                <area shape="rect" coords="220,100,370,350" href="#members" onclick="showMember('sebastian')">
+                <area shape="rect" coords="390,100,540,350" href="#members" onclick="showMember('kevin')">
+                <area shape="rect" coords="560,100,710,350" href="#members" onclick="showMember('kaleb')">
+                <area shape="rect" coords="730,100,880,350" href="#members" onclick="showMember('erick')">
+            </map>
+        </div>
     </section>
 
     <!-- Members -->
     <section class="members">
         <div class="members-grid">
-            <a href="https://kevindacanay.github.io/" class="member-card">
+            <a id="kevin" href="https://kevindacanay.github.io/" target="_blank" class="member-card">
                 <img src="assets/kevin-800-by-800.jpg" class="member-image">
                 <h3>Kevin Dacanay</h3>
                 <p>kevinbrianfdacanay@lewisu.edu</p>
             </a>
 
-            <a href="https://kairoshdz.github.io/me_v2/" class="member-card">
+            <a id="erick" href="https://kairoshdz.github.io/me_v2/" target="_blank"  class="member-card">
                 <img src="assets/erick-800-by-800.jpg" class="member-image">
                 <h3>Erick Hernandez</h3>
                 <p>erickdhernandez@lewisu.edu</p>
             </a>
 
-            <a href="https://sebbae1.github.io/me/" class="member-card">
+            <a id="sebastian" href="https://sebbae1.github.io/me/" target="_blank"  class="member-card">
                 <img src="assets/sebastian-800-by-800.jpg" class="member-image">
                 <h3>Sebastian Jaculbe</h3>
                 <p>sebastiandjaculbe@lewisu.edu</p>
             </a>
 
-            <a href="https://kalebr6101.github.io/Me/" class="member-card">
+            <a id="kaleb" href="https://kalebr6101.github.io/Me/" target="_blank"  class="member-card">
                 <img src="assets/kaleb-800-by-800.jpg" class="member-image">
                 <h3>Kaleb Richardson</h3>
                 <p>kalebjrichardson@lewisu.edu</p>
             </a>
 
-            <a href="https://eddy2005cs.github.io/me/" class="member-card">
+            <a id="edward" href="https://eddy2005cs.github.io/me/" target="_blank"  class="member-card">
                 <img src="assets/edward-800-by-800.jpg" class="member-image">
                 <h3>Edward Rodriguez</h3>
                 <p>edwardhrodriguez@lewisu.edu</p>
             </a>
         </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects">
+        <h1>Team Projects</h1>
+        <div class="projects-grid">
+            
+            <a href="" target="_blank" class="project-card">
+                <h3>Scum Team - Getting to Know Each Other</h3>
+                <p class="description">Getting to know our scrum team members Web Page.</p>
+                <p class="status">Status: <span style="color:orange">In Progress</span></p>
+                <p class="tech">Tech: HTML, CSS, Javascript, GitHub, Microsoft Azure</p>
+            </a>
+
+             <a href="" target="_blank" class="project-card">
+                <h3>Scum Team - Insurance Healthrisk Caclulator</h3>
+                <p class="description">A simple healthrisk caclulor.</p>
+                <p class="status">Status: <span style="color:orange">In Progress</span></p>
+                <p class="tech">Tech: HTML, CSS, Javascript, Node.js, GitHub, Microsoft Azure</p>
+            </a>
+
+        </div>
+
     </section>
 
     <!-- Footer Section -->
