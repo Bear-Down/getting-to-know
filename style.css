@@ -36,7 +36,22 @@ body {
     justify-content: center;
     text-align: center;
 }
-
+/*************************************************/
+.group-section {
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+    color: rgb(126, 124, 122);
+}
+.group-section-container {
+    display: flex;
+    justify-content: center;
+}
+.group-image {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 20px;  
+}
 /*************************************************/
 .members-grid {
     max-width: 100%;
@@ -48,7 +63,7 @@ body {
 }
 
 .member-card {
-    flex: 1 1 280px; 
+    flex: 1 1 280px;
     max-width: 280px; 
     padding: 25px 30px 70px 30px;
     border-radius: 20px;
@@ -56,6 +71,7 @@ body {
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: none;
 }
 
 .member-card:hover {
@@ -64,13 +80,6 @@ body {
     z-index: 1;
 }
 
-.members-grid:hover .member-card {
-    transform: scale(0.95);
-}
-
-.members-grid .member-card:hover {
-    transform: scale(1.08);
-}
 
 .member-image {
     height: 100%;
@@ -78,7 +87,54 @@ body {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-
+/*************************************************/
+.projects {
+    text-align: center;
+    padding: 35px;
+}
+.projects p {
+    color: #a2a2a2;
+}
+.projects h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+.projects-grid {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgb(233, 143, 24);
+}
+.project-card h3 {
+    margin-bottom: 10px;
+}
+.project-card .description {
+    margin-bottom: 15px;
+    color: #555;
+}
+.project-card .status {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.project-card .tech {
+    font-size: 14px;
+    color: #666;
+}
 /*************************************************/
 .footer {
     background: rgb(46, 46, 215);
