@@ -25,4 +25,4 @@ This project is configured for continuous deployment using Azure Static Web Apps
 1. Changes pushed to the main branch of our GitHub repository automatically trigger a GitHub Actions workflow.
 2. The workflow deploys the latest version of the site to the Azure Static Web App.
 
-Visit the site @ [link](link)
+Visit the site @ [https://nice-bay-0f6a7851e.4.azurestaticapps.net](https://nice-bay-0f6a7851e.4.azurestaticapps.net)
